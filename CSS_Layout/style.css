@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-parent {
+  display: flex;
+}
+
+.flex-child {
+  width: 10rem;
+  height: 10rem;
+  background-color: indianred;
+  font-size: 3rem;
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: 100px 5rem 1fr;
+}
+
+.grid-child {
+  width: 3rem;
+  height: 4rem;
+  background-color: indigo;
+  font-size: 3rem;
+}

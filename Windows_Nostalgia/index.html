@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+    <title>Windows Nostalgia</title>
+  </head>
+
+  <body>
+
+    <!-- BEM - Block - Element - Modifier -->
+    <aside popover class="window" id="window">
+      <header class="window__header">
+        <h2 class="window__heading">Kernel panic</h2>
+      </header>
+      <div class="border"></div>
+
+      <div class="window__content">
+        <img class="window__img" src="https://i.postimg.cc/wTQJ3hgb/error.png" width="20" height="20" alt="" />
+        <p class="window__message">Please shut down your computer, and go for a walk.</p>
+        <button popovertarget="window" class="window__btn">Cancel</button>
+      </div>
+    </aside>
+
+    <button popovertarget="window">Toggle Window</button>
+
+  </body>
+
+</html>

@@ -1,0 +1,15 @@
+.black-paragraphs {
+  color: black;
+}
+
+p {
+  color: red;
+}
+
+#special-paragraph {
+  color: blue;
+}
+
+div p {
+  color: green;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      html {
+        color-scheme: dark;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Bootcamp SignUp</h1>
+    </header>
+
+    <main>
+      <form>
+        <!-- Address Info -->
+        <fieldset>
+          <legend>Address Info</legend>
+
+          <label for="first-name">First Name</label>
+          <input type="text" name="first-name" id="first-name" required autocomplete="given-name" maxlength="200">
+          <br>
+          <br>
+          <label for="last-name">Last Name</label>
+          <input type="text" name="last-name" id="last-name" required>
+          <br>
+          <br>
+          <label for="street">Street</label>
+          <input type="text" name="street" id="street" required>
+          <br>
+          <br>
+          <label for="house-number">House Number</label>
+          <input type="number" name="house-number" id="house-number" required min="1" max="42">
+          <br>
+          <br>
+          <label for="city">City</label>
+          <input type="text" name="city" id="city" required>
+          <br>
+          <br>
+          <label for="zip">ZIP-Code</label>
+          <input type="text" name="zip" id="zip" required>
+
+        </fieldset>
+
+        <!-- Options -->
+        <fieldset>
+          <legend>Select your Bootcamp</legend>
+          <!-- <label for="course">Select your Bootcamp</label> -->
+          <select name="course" id="course" required aria-label="Select your Bootcamp">
+            <option value="" selected disabled>--</option>
+            <option value="WB">Web & App Dev</option>
+            <option value="DS">Data Science</option>
+            <option value="UI">UI/UX Design</option>
+          </select>
+        </fieldset>
+
+        <!-- Personal Info -->
+        <fieldset>
+          <legend>Personal Info</legend>
+
+          <p>Is chocolate you favourite ice cream?</p>
+          <input type="radio" name="flavour" id="fl-yes" required value="yes">
+          <label for="fl-yes">Yes</label>
+          <input type="radio" name="flavour" id="fl-no" required value="no">
+          <label for="fl-no">No</label>
+          <input type="radio" name="flavour" id="fl-null" required value="no-answer">
+          <label for="fl-null">No answer</label>
+
+        </fieldset>
+
+        <!-- Terms -->
+        <fieldset>
+          <legend>Terms and Newsletter</legend>
+          <p>Do you agree with <a href="#">our Terms</a>?</p>
+          <input type="checkbox" name="terms" id="terms" required>
+          <label for="terms">Our terms: $gajefhbwe</label>
+          <br>
+          <input type="checkbox" name="newsletter" id="newsletter">
+          <label for="newsletter">Do you want to receive our daily newsletter?</label>
+        </fieldset>
+
+        <!-- Submit Form -->
+        <button>Submit</button>
+        <!-- <button type="reset">Reset</button> -->
+      </form>
+    </main>
+
+    <footer>
+      <small>&copy; '24 - THE BOOTCAMP COMPANY</small>
+    </footer>
+
+  </body>
+
+</html>
